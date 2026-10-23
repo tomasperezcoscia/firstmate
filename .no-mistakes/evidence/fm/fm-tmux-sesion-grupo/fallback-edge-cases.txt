@@ -1,0 +1,10 @@
+TMUX=/tmp/fma.tMIkO6/tmux-1000/adv,1235622,0
+untargeted #S -> puente-v-feedface0001
+[real $TMUX] container_ensure -> primary
+ rc=0
+[malformed sid: TMUX=/tmp/fma.tMIkO6/tmux-1000/adv,1235622,abc] container_ensure -> puente-v-feedface0001
+ rc=0
+[empty sid: TMUX=/tmp/fma.tMIkO6/tmux-1000/adv,1235622,] container_ensure -> puente-v-feedface0001
+ rc=0
+[stale sid of killed session $1] container_ensure -> 
+ rc=0

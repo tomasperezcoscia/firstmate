@@ -1,0 +1,47 @@
+== lab stale-base: code=/tmp/fm-basegit.ev33Hl (6999991)
+lab root=/tmp/fm-lab.3lwFm9 task=lab8c8a3569-ship original session=cc-firstmate-1256995 viewer session=puente-v-8c8a35690c1d
+--- primary pane %2 opened from the viewer; sessions:
+cc-firstmate-1256995 id=$0 group=cc-firstmate-1256995 attached=0
+puente-v-8c8a35690c1d id=$1 group=cc-firstmate-1256995 attached=1
+--- precheck with the viewer alive
+TMUX=/tmp/fml.0ikX4W/tmux-1000/fm-lab,1257045,1
+TMUX_PANE=%2
+untargeted 'tmux display-message -p #S' from this pane -> puente-v-8c8a35690c1d
+pane's own session (display-message -t $TMUX_PANE '#{session_name}') -> puente-v-8c8a35690c1d
+fm_backend_tmux_container_ensure -> puente-v-8c8a35690c1d
+--- viewer closed; sessions now: cc-firstmate-1256995 
+primary pane still lives at: cc-firstmate-1256995:main
+--- precheck after the viewer closed
+TMUX=/tmp/fml.0ikX4W/tmux-1000/fm-lab,1257045,1
+TMUX_PANE=%2
+untargeted 'tmux display-message -p #S' from this pane -> cc-firstmate-1256995
+pane's own session (display-message -t $TMUX_PANE '#{session_name}') -> cc-firstmate-1256995
+fm_backend_tmux_container_ensure -> cc-firstmate-1256995
+--- fm-spawn.sh tail (full log: stale-base-spawn.log)
+spawned lab8c8a3569-ship harness=claude kind=ship mode=local-only yolo=on window=cc-firstmate-1256995:fm-lab8c8a3569-ship worktree=/tmp/fm-lab.3lwFm9/treehouse/.treehouse/notes-8470ee/1/notes
++ echo 'fm-spawn exit=0'
+fm-spawn exit=0
++ set +x
+--- recorded endpoint
+window=cc-firstmate-1256995:fm-lab8c8a3569-ship
+--- where the task window lives
+cc-firstmate-1256995:fm-lab8c8a3569-ship (@3)
+--- endpoint resolution from the primary pane
++ grep ^window= state/lab8c8a3569-ship.meta
+window=cc-firstmate-1256995:fm-lab8c8a3569-ship
++ bin/fm-peek.sh lab8c8a3569-ship 12
+●━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+●  WATCHER DOWN - SUPERVISION IS OFF
+●  1 task(s) in flight, but no watcher has a fresh beacon (last beat: never, grace 300s).
+●  Trust the emitted supervision protocol for this harness; do not use shell & for watcher repair.
+●  This is a supervision warning only; the guarded operation WILL still run.
+●  repair missing watcher supervision according to the session-start block for this harness; do not use shell &.
+●━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+❯ : Firstmate operational input waiting: read '/tmp/fm-lab.3lwFm9/home/state/operational-inbox/1792718465-12257139d2c143a2.msg' and handle its contents as Firstmate operational input.
+✶ Vibing… (running SessionStart hooks… 7/8 · 0s)
+❯ 
+fm-peek exit=0
++ bin/fm-crew-state.sh lab8c8a3569-ship
+state: working · source: pane · harness busy (fm-spawn)
+fm-crew-state exit=0
+== lab stale-base finished

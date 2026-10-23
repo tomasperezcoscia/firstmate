@@ -1,0 +1,38 @@
+== lab stale-target: code=/home/tperez/.no-mistakes/worktrees/9cf2fb7d564f/01M5K4X85ZEW3T188VF4DA28W2 (5f0b790)
+lab root=/tmp/fm-lab.gw7LTt task=lab5672311b-ship original session=cc-firstmate-1252474 viewer session=puente-v-5672311b0c1d
+--- primary pane %2 opened from the viewer; sessions:
+cc-firstmate-1252474 id=$0 group=cc-firstmate-1252474 attached=0
+puente-v-5672311b0c1d id=$1 group=cc-firstmate-1252474 attached=1
+--- precheck with the viewer alive
+TMUX=/tmp/fml.jauHab/tmux-1000/fm-lab,1252528,1
+TMUX_PANE=%2
+untargeted 'tmux display-message -p #S' from this pane -> puente-v-5672311b0c1d
+pane's own session (display-message -t $TMUX_PANE '#{session_name}') -> puente-v-5672311b0c1d
+fm_backend_tmux_container_ensure -> puente-v-5672311b0c1d
+--- viewer closed; sessions now: cc-firstmate-1252474 
+primary pane still lives at: cc-firstmate-1252474:main
+--- precheck after the viewer closed
+TMUX=/tmp/fml.jauHab/tmux-1000/fm-lab,1252528,1
+TMUX_PANE=%2
+untargeted 'tmux display-message -p #S' from this pane -> cc-firstmate-1252474
+pane's own session (display-message -t $TMUX_PANE '#{session_name}') -> cc-firstmate-1252474
+fm_backend_tmux_container_ensure -> 
+--- fm-spawn.sh tail (full log: stale-target-spawn.log)
+warning: leaving task lab5672311b-ship's slot claim on /tmp/fm-lab.gw7LTt/treehouse/.treehouse/notes-effaa0/1/notes in place; the Treehouse project lock is no longer held, so the next spawn's claim replaces it
++ echo 'fm-spawn exit=1'
+fm-spawn exit=1
++ set +x
+--- recorded endpoint
+grep: /tmp/fm-lab.gw7LTt/home/state/lab5672311b-ship.meta: No existe el archivo o el directorio
+--- where the task window lives
+cc-firstmate-1252474:fm-lab5672311b-ship (@3)
+--- endpoint resolution from the primary pane
++ grep ^window= state/lab5672311b-ship.meta
+grep: /tmp/fm-lab.gw7LTt/home/state/lab5672311b-ship.meta: No existe el archivo o el directorio
++ bin/fm-peek.sh lab5672311b-ship 12
+error: no window named lab5672311b-ship
+fm-peek exit=1
++ bin/fm-crew-state.sh lab5672311b-ship
+state: unknown · source: none · no metadata for lab5672311b-ship
+fm-crew-state exit=0
+== lab stale-target finished

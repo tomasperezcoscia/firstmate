@@ -1,0 +1,34 @@
++ /home/tperez/.no-mistakes/worktrees/9cf2fb7d564f/01M5K4X85ZEW3T188VF4DA28W2/bin/fm-brief.sh lab5672311b-ship notes --mode local-only
+scaffolded: /tmp/fm-lab.gw7LTt/home/data/lab5672311b-ship/brief.md (ship, mode=local-only; replace {TASK} and {FIRSTMATE_SPEC})
++ TASK_TEXT='Live-validation lab task for a tmux container fix. Do not modify any files. Reply with the single word READY and end your turn.'
++ SPEC_TEXT='Do not run any commands and do not modify any files. Reply READY and end your turn. Nothing else is in scope.'
++ python3 - /tmp/fm-lab.gw7LTt/home/data/lab5672311b-ship/brief.md
++ /home/tperez/.no-mistakes/worktrees/9cf2fb7d564f/01M5K4X85ZEW3T188VF4DA28W2/bin/fm-tasks-axi.sh add lab5672311b-ship 'lab grouped-session ship' --kind ship --repo notes
+ok: added lab5672311b-ship (ship, repo notes) -> Queued
+task:
+  id: lab5672311b-ship
+  title: lab grouped-session ship
+  state: queued
+  blocked: no
+  blocked_by: none
+  held: no
+  hold_reason: "-"
+  hold_kind: "-"
+  hold_until: "-"
+  kind: ship
+  repo: notes
+  priority: "-"
+  created: 2026-10-22
+  closed: "-"
+  deps: none
+  links: none
+  body: ""
+help[2]:
+  - Run `tasks-axi start lab5672311b-ship` to move it to in flight
+  - Run `tasks-axi block lab5672311b-ship --by <other>` to record a dependency
++ /home/tperez/.no-mistakes/worktrees/9cf2fb7d564f/01M5K4X85ZEW3T188VF4DA28W2/bin/fm-spawn.sh lab5672311b-ship /tmp/fm-lab.gw7LTt/home/projects/notes --mode local-only --yolo on --harness claude --model sonnet --effort low
+fm-gate-refuse: gate agent lifecycle permitted only against lab home /tmp/fm-lab.gw7LTt/home
+warning: leaving task lab5672311b-ship's slot claim on /tmp/fm-lab.gw7LTt/treehouse/.treehouse/notes-effaa0/1/notes in place; the Treehouse project lock is no longer held, so the next spawn's claim replaces it
++ echo 'fm-spawn exit=1'
+fm-spawn exit=1
++ set +x

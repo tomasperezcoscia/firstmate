@@ -1,0 +1,13 @@
+pane's own session ($TMUX id $0) -> cc-firstmate-1335724: META_API_KEY=<set>
+most-recent group member -> puente-v-0249266f0c1d: unknown variable: META_API_KEY
++ fm-spawn.sh lab0249266f-muse ... --harness muse   (no auth.json; META_API_KEY only in the primary's own tmux session env)
+fm-gate-refuse: gate agent lifecycle permitted only against lab home /tmp/fm-lab.t7UwlT/home
+●━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+●  WATCHER DOWN - SUPERVISION IS OFF
+●  1 task(s) in flight, but no watcher has a fresh beacon (last beat: never, grace 300s).
+●  Trust the emitted supervision protocol for this harness; do not use shell & for watcher repair.
+●  This is a supervision warning only; the guarded operation WILL still run.
+●  repair missing watcher supervision according to the session-start block for this harness; do not use shell &.
+●━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+spawned lab0249266f-muse harness=muse kind=ship mode=local-only yolo=on window=cc-firstmate-1335724:fm-lab0249266f-muse worktree=/tmp/fm-lab.t7UwlT/treehouse/.treehouse/notes-ecc663/2/notes
+fm-spawn exit=0

@@ -1,0 +1,47 @@
+== lab r2-target-grouped (grouped): code=/home/tperez/.no-mistakes/worktrees/9cf2fb7d564f/01M5K4X85ZEW3T188VF4DA28W2 (534622a)
+lab root=/tmp/fm-lab.t7UwlT task=lab0249266f-ship primary session=cc-firstmate-1335724 viewer session=puente-v-0249266f0c1d
+--- primary pane %0 created in session puente-v-0249266f0c1d; sessions and clients:
+cc-firstmate-1335724 id=$0 group=cc-firstmate-1335724 attached=0
+puente-v-0249266f0c1d id=$1 group=cc-firstmate-1335724 attached=1
+client /dev/pts/4 -> session puente-v-0249266f0c1d
+--- precheck from the primary pane, viewer attached
+TMUX=/tmp/fml.L5tKBx/tmux-1000/fm-lab,1335793,0
+TMUX_PANE=%0
+untargeted 'tmux display-message -p #S' from this pane -> puente-v-0249266f0c1d
+fm_backend_tmux_container_ensure -> 'cc-firstmate-1335724'
+--- fm-spawn.sh tail (full log: r2-target-grouped-spawn.log)
+spawned lab0249266f-ship harness=claude kind=ship mode=local-only yolo=on window=cc-firstmate-1335724:fm-lab0249266f-ship worktree=/tmp/fm-lab.t7UwlT/treehouse/.treehouse/notes-ecc663/1/notes
+fm-spawn exit=0
+--- recorded endpoint in state/lab0249266f-ship.meta
+window=cc-firstmate-1335724:fm-lab0249266f-ship
+--- where the task window actually lives
+cc-firstmate-1335724:fm-lab0249266f-ship (@2)
+puente-v-0249266f0c1d:fm-lab0249266f-ship (@2)
+--- muse credential preflight (full log: r2-target-grouped-muse.log)
+pane's own session ($TMUX id $0) -> cc-firstmate-1335724: META_API_KEY=<set>
+most-recent group member -> puente-v-0249266f0c1d: unknown variable: META_API_KEY
++ fm-spawn.sh lab0249266f-muse ... --harness muse   (no auth.json; META_API_KEY only in the primary's own tmux session env)
+spawned lab0249266f-muse harness=muse kind=ship mode=local-only yolo=on window=cc-firstmate-1335724:fm-lab0249266f-muse worktree=/tmp/fm-lab.t7UwlT/treehouse/.treehouse/notes-ecc663/2/notes
+fm-spawn exit=0
+muse task window: @3 -> LAB-MUSE-PLACEHOLDER launched: credential preflight passed
+--- endpoint resolution while the viewer is attached
++ grep ^window= state/lab0249266f-ship.meta
+window=cc-firstmate-1335724:fm-lab0249266f-ship
++ bin/fm-peek.sh lab0249266f-ship 8
+fm-peek exit=0
++ bin/fm-crew-state.sh lab0249266f-ship
+state: unknown · source: none · no current-state source available
+fm-crew-state exit=0
+--- viewer closed (kill-session -t puente-v-0249266f0c1d); sessions now: cc-firstmate-1335724 
+primary pane %0 still lives at: cc-firstmate-1335724:main
+--- endpoint resolution after the viewer closed (full: r2-target-grouped-endpoint-after-viewer-closed.txt)
++ grep ^window= state/lab0249266f-ship.meta
+window=cc-firstmate-1335724:fm-lab0249266f-ship
++ bin/fm-peek.sh lab0249266f-ship 8
+fm-peek exit=0
++ bin/fm-crew-state.sh lab0249266f-ship
+state: unknown · source: none · no current-state source available
+fm-crew-state exit=0
+== lab r2-target-grouped finished
+--- teardown: claude trust entries removed for this lab: 2
+--- ~/.treehouse unchanged: yes

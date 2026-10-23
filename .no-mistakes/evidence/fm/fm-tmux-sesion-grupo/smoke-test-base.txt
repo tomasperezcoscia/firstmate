@@ -1,0 +1,3 @@
+ok - real tmux: fm_backend_target_exists rejects a missing session while another session stays alive
+ok - real tmux: kill removes the window and the readable session inventory authoritatively classifies it missing
+not ok - container_ensure chose 'smoke-viewer' instead of the pane's own session 'smoke' beside a grouped session

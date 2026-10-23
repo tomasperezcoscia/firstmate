@@ -1,0 +1,120 @@
+== lab base: code=/tmp/fm-basegit.ev33Hl (6999991)
+lab root=/tmp/fm-lab.P7z6PL  task=lab8f0d1a86-ship  primary session=cc-firstmate-1227626  viewer session=puente-v-8f0d1a860c1d
+--- tmux sessions (group) and clients
+cc-firstmate-1227626 id=$0 group=cc-firstmate-1227626 attached=0 activity=1792718342
+puente-v-8f0d1a860c1d id=$1 group=cc-firstmate-1227626 attached=1 activity=1792718343
+client /dev/pts/7 -> session puente-v-8f0d1a860c1d
+--- precheck (run inside the primary pane)
+TMUX=/tmp/fml.HlXSYx/tmux-1000/fm-lab,1227701,0
+TMUX_PANE=%0
+untargeted 'tmux display-message -p #S' from this pane -> puente-v-8f0d1a860c1d
+pane's own session (display-message -t $TMUX_PANE '#{session_name}') -> puente-v-8f0d1a860c1d
+fm_backend_tmux_container_ensure -> puente-v-8f0d1a860c1d
+--- fm-spawn.sh tail (full log: base-spawn.log)
++ /tmp/fm-basegit.ev33Hl/bin/fm-spawn.sh lab8f0d1a86-ship /tmp/fm-lab.P7z6PL/home/projects/notes --mode local-only --yolo on --harness claude --model sonnet --effort low
+spawned lab8f0d1a86-ship harness=claude kind=ship mode=local-only yolo=on window=puente-v-8f0d1a860c1d:fm-lab8f0d1a86-ship worktree=/tmp/fm-lab.P7z6PL/treehouse/.treehouse/notes-a7d42d/1/notes
++ echo 'fm-spawn exit=0'
+fm-spawn exit=0
++ set +x
+--- recorded endpoint in state/lab8f0d1a86-ship.meta
+window=puente-v-8f0d1a860c1d:fm-lab8f0d1a86-ship
+--- where the task window actually lives
+cc-firstmate-1227626:fm-lab8f0d1a86-ship (@2)
+puente-v-8f0d1a860c1d:fm-lab8f0d1a86-ship (@2)
+--- muse credential preflight (META_API_KEY set only on the primary's own session)
+own session (cc-firstmate-1227626) META_API_KEY: META_API_KEY=lab-placeholder-not-a-secret
+most-recent group member (puente-v-8f0d1a860c1d) META_API_KEY: unknown variable: META_API_KEY
++ fm-spawn.sh lab8f0d1a86-muse ... --harness muse (META_API_KEY only in the primary's own tmux session env; XDG auth.json absent)
+●━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+●  WATCHER DOWN - SUPERVISION IS OFF
+●  1 task(s) in flight, but no watcher has a fresh beacon (last beat: never, grace 300s).
+●  Trust the emitted supervision protocol for this harness; do not use shell & for watcher repair.
+●  This is a supervision warning only; the guarded operation WILL still run.
+●  repair missing watcher supervision according to the session-start block for this harness; do not use shell &.
+●━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+error: muse has no worker-reachable credential; META_API_KEY cannot be proven present in the tmux worker environment and '/tmp/fm-lab.P7z6PL/xdg/muse/auth.json' is absent or empty. Store the fleet credential with 'muse login' or 'muse auth set --api-key-stdin'.
+fm-spawn exit=1
+--- endpoint resolution while the viewer is attached
++ grep ^window= state/lab8f0d1a86-ship.meta
+window=puente-v-8f0d1a860c1d:fm-lab8f0d1a86-ship
++ bin/fm-peek.sh lab8f0d1a86-ship 12
+WARNING: watcher still down (same stale episode; last beat: never, grace 300s) - full banner already printed this episode.
+
+ ▐▛███▛█   Claude Code v2.1.309
+▝▜██████▀  Sonnet 5.5 with low effort · Claude Max
+ ▝▝   ▝▝   /tmp/fm-lab.P7z6PL/treehouse/.treehouse/notes-a7d42d/1/notes
+
+
+❯ : Firstmate operational input waiting: read '/tmp/fm-lab.P7z6PL/home/state/operational-inbox/1792718350-3a9c9b07a282ec7b.msg' and handle its contents as Firstmate operational input.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+✻ Hyperspacing…
+▄▀▀▀▀▀▄ ▄▀▀▀▀▀▄  relojeo                                                                                                                                                                            [-]
+▀  ▄▄ ▀ ▀  ▄▄ ▀  relojeando…
+▀▄▄▀▀▄▀ ▀▄▄▀▀▄▀
+                                                                                                                                                                                       ○ low · /effort
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+❯ 
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  ⏵⏵ auto mode on (shift+tab to cycle) · esc to interrupt · ← for agents
+fm-peek exit=0
++ bin/fm-crew-state.sh lab8f0d1a86-ship
+state: working · source: pane · harness busy (claude-hook)
+fm-crew-state exit=0
+--- viewer closed: kill-session -t puente-v-8f0d1a860c1d; sessions now:
+cc-firstmate-1227626
+--- endpoint resolution after the viewer closed
++ grep ^window= state/lab8f0d1a86-ship.meta
+window=puente-v-8f0d1a860c1d:fm-lab8f0d1a86-ship
++ bin/fm-peek.sh lab8f0d1a86-ship 12
+WARNING: watcher still down (same stale episode; last beat: never, grace 300s) - full banner already printed this episode.
+can't find session: puente-v-8f0d1a860c1d
+fm-peek exit=1
++ bin/fm-crew-state.sh lab8f0d1a86-ship
+state: unknown · source: none · backend target gone: puente-v-8f0d1a860c1d:fm-lab8f0d1a86-ship
+fm-crew-state exit=0
+--- worker pane (real claude worker) capture
+
+
+
+· Catapulting…
+▄▀▀▀▀▀▄ ▄▀▀▀▀▀▄  relojeo                                                                                                                                                                            [-]
+▀  ▄▄ ▀ ▀  ▄▄ ▀  relojeando…
+▀▄▄▀▀▄▀ ▀▄▄▀▀▄▀
+                                                                                                                                                                                       ○ low · /effort
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+❯ 
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  ⏵⏵ auto mode on (shift+tab to cycle) · esc to interrupt · ← for agents
+== lab base finished; root left for trust cleanup: /tmp/fm-lab.P7z6PL

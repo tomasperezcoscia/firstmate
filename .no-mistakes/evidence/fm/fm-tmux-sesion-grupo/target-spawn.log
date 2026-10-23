@@ -1,0 +1,34 @@
++ /home/tperez/.no-mistakes/worktrees/9cf2fb7d564f/01M5K4X85ZEW3T188VF4DA28W2/bin/fm-brief.sh labbbfa82dd-ship notes --mode local-only
+scaffolded: /tmp/fm-lab.gYlSJf/home/data/labbbfa82dd-ship/brief.md (ship, mode=local-only; replace {TASK} and {FIRSTMATE_SPEC})
++ TASK_TEXT='Live-validation lab task for a tmux container fix. Do not modify any files. Reply with the single word READY and end your turn.'
++ SPEC_TEXT='Do not run any commands and do not modify any files. Reply READY and end your turn. Nothing else is in scope.'
++ python3 - /tmp/fm-lab.gYlSJf/home/data/labbbfa82dd-ship/brief.md
++ /home/tperez/.no-mistakes/worktrees/9cf2fb7d564f/01M5K4X85ZEW3T188VF4DA28W2/bin/fm-tasks-axi.sh add labbbfa82dd-ship 'lab grouped-session ship' --kind ship --repo notes
+ok: added labbbfa82dd-ship (ship, repo notes) -> Queued
+task:
+  id: labbbfa82dd-ship
+  title: lab grouped-session ship
+  state: queued
+  blocked: no
+  blocked_by: none
+  held: no
+  hold_reason: "-"
+  hold_kind: "-"
+  hold_until: "-"
+  kind: ship
+  repo: notes
+  priority: "-"
+  created: 2026-10-22
+  closed: "-"
+  deps: none
+  links: none
+  body: ""
+help[2]:
+  - Run `tasks-axi start labbbfa82dd-ship` to move it to in flight
+  - Run `tasks-axi block labbbfa82dd-ship --by <other>` to record a dependency
++ /home/tperez/.no-mistakes/worktrees/9cf2fb7d564f/01M5K4X85ZEW3T188VF4DA28W2/bin/fm-spawn.sh labbbfa82dd-ship /tmp/fm-lab.gYlSJf/home/projects/notes --mode local-only --yolo on --harness claude --model sonnet --effort low
+fm-gate-refuse: gate agent lifecycle permitted only against lab home /tmp/fm-lab.gYlSJf/home
+spawned labbbfa82dd-ship harness=claude kind=ship mode=local-only yolo=on window=cc-firstmate-1212796:fm-labbbfa82dd-ship worktree=/tmp/fm-lab.gYlSJf/treehouse/.treehouse/notes-5f7282/1/notes
++ echo 'fm-spawn exit=0'
+fm-spawn exit=0
++ set +x

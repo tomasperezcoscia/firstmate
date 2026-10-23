@@ -1,0 +1,24 @@
+== target 534622a
+sessions: cc-firstmate-edge($0) puente-v-aaaa($1) 
+untargeted #S from the pane: puente-v-aaaa
+own session id, viewer is most recent                      TMUX=...,0     -> 'cc-firstmate-edge'    rc=0
+malformed id (non-numeric)                                 TMUX=...,abc   -> 'puente-v-aaaa'        rc=0
+empty id                                                   TMUX=...,      -> 'puente-v-aaaa'        rc=0
+id prefixed with $ (not a bare number)                     TMUX=...,$0    -> 'puente-v-aaaa'        rc=0
+viewer's id while the viewer is alive                      TMUX=...,1     -> 'puente-v-aaaa'        rc=0
+stale id: viewer killed, only own session left             TMUX=...,1     -> 'cc-firstmate-edge'    rc=0
+sessions: cc-firstmate-edge($0) puente-v-bbbb($2) 
+stale id while a SECOND viewer is now most recent          TMUX=...,1     -> 'puente-v-bbbb'        rc=0
+own id while a second viewer is most recent                TMUX=...,0     -> 'cc-firstmate-edge'    rc=0
+== base 6999991
+sessions: cc-firstmate-edge($0) puente-v-aaaa($1) 
+untargeted #S from the pane: puente-v-aaaa
+own session id, viewer is most recent                      TMUX=...,0     -> 'puente-v-aaaa'        rc=0
+malformed id (non-numeric)                                 TMUX=...,abc   -> 'puente-v-aaaa'        rc=0
+empty id                                                   TMUX=...,      -> 'puente-v-aaaa'        rc=0
+id prefixed with $ (not a bare number)                     TMUX=...,$0    -> 'puente-v-aaaa'        rc=0
+viewer's id while the viewer is alive                      TMUX=...,1     -> 'puente-v-aaaa'        rc=0
+stale id: viewer killed, only own session left             TMUX=...,1     -> 'cc-firstmate-edge'    rc=0
+sessions: cc-firstmate-edge($0) puente-v-bbbb($2) 
+stale id while a SECOND viewer is now most recent          TMUX=...,1     -> 'puente-v-bbbb'        rc=0
+own id while a second viewer is most recent                TMUX=...,0     -> 'puente-v-bbbb'        rc=0

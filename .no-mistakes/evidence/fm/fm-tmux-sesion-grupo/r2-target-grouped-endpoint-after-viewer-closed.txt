@@ -1,0 +1,57 @@
++ grep ^window= state/lab0249266f-ship.meta
+window=cc-firstmate-1335724:fm-lab0249266f-ship
++ bin/fm-peek.sh lab0249266f-ship 8
+WARNING: watcher still down (same stale episode; last beat: never, grace 300s) - full banner already printed this episode.
+
+ ▐▛███▛█   Claude Code v2.1.309
+▝▜██████▀  Sonnet 5.5 with low effort · Claude Max
+ ▝▝   ▝▝   /tmp/fm-lab.t7UwlT/treehouse/.treehouse/notes-ecc663/1/notes
+
+
+❯ : Firstmate operational input waiting: read '/tmp/fm-lab.t7UwlT/home/state/operational-inbox/1792718887-5c875fb96964b1bf.msg' and handle its contents as Firstmate operational input.
+
+  Read 1 file
+
+● READY
+
+✻ Cogitated for 5s · done 22:28
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+▄▀▀▀▀▀▄ ▄▀▀▀▀▀▄  relojeo                                                                                                                                                                            [-]
+▀   ▀▀▀ ▀   ▀▀▀  mirando de reojo
+▀▄▄▄▄▄▀ ▀▄▄▄▄▄▀
+                                                                                                                                                                                       ○ low · /effort
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+❯ 
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  ⏵⏵ auto mode on (shift+tab to cycle) · ← for agents
+fm-peek exit=0
++ bin/fm-crew-state.sh lab0249266f-ship
+state: unknown · source: none · no current-state source available
+fm-crew-state exit=0

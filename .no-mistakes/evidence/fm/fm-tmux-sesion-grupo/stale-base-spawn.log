@@ -1,0 +1,33 @@
++ /tmp/fm-basegit.ev33Hl/bin/fm-brief.sh lab8c8a3569-ship notes --mode local-only
+scaffolded: /tmp/fm-lab.3lwFm9/home/data/lab8c8a3569-ship/brief.md (ship, mode=local-only; replace {TASK} and {FIRSTMATE_SPEC})
++ TASK_TEXT='Live-validation lab task for a tmux container fix. Do not modify any files. Reply with the single word READY and end your turn.'
++ SPEC_TEXT='Do not run any commands and do not modify any files. Reply READY and end your turn. Nothing else is in scope.'
++ python3 - /tmp/fm-lab.3lwFm9/home/data/lab8c8a3569-ship/brief.md
++ /tmp/fm-basegit.ev33Hl/bin/fm-tasks-axi.sh add lab8c8a3569-ship 'lab grouped-session ship' --kind ship --repo notes
+ok: added lab8c8a3569-ship (ship, repo notes) -> Queued
+task:
+  id: lab8c8a3569-ship
+  title: lab grouped-session ship
+  state: queued
+  blocked: no
+  blocked_by: none
+  held: no
+  hold_reason: "-"
+  hold_kind: "-"
+  hold_until: "-"
+  kind: ship
+  repo: notes
+  priority: "-"
+  created: 2026-10-22
+  closed: "-"
+  deps: none
+  links: none
+  body: ""
+help[2]:
+  - Run `tasks-axi start lab8c8a3569-ship` to move it to in flight
+  - Run `tasks-axi block lab8c8a3569-ship --by <other>` to record a dependency
++ /tmp/fm-basegit.ev33Hl/bin/fm-spawn.sh lab8c8a3569-ship /tmp/fm-lab.3lwFm9/home/projects/notes --mode local-only --yolo on --harness claude --model sonnet --effort low
+spawned lab8c8a3569-ship harness=claude kind=ship mode=local-only yolo=on window=cc-firstmate-1256995:fm-lab8c8a3569-ship worktree=/tmp/fm-lab.3lwFm9/treehouse/.treehouse/notes-8470ee/1/notes
++ echo 'fm-spawn exit=0'
+fm-spawn exit=0
++ set +x

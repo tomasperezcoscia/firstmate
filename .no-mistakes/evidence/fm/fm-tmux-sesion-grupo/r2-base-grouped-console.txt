@@ -1,0 +1,47 @@
+== lab r2-base-grouped (grouped): code=/tmp/fm-basegit.ktnDXz (6ac985f)
+lab root=/tmp/fm-lab.J4iLWH task=lab30d9315b-ship primary session=cc-firstmate-1345851 viewer session=puente-v-30d9315b0c1d
+--- primary pane %0 created in session puente-v-30d9315b0c1d; sessions and clients:
+cc-firstmate-1345851 id=$0 group=cc-firstmate-1345851 attached=0
+puente-v-30d9315b0c1d id=$1 group=cc-firstmate-1345851 attached=1
+client /dev/pts/5 -> session puente-v-30d9315b0c1d
+--- precheck from the primary pane, viewer attached
+TMUX=/tmp/fml.mf4NCo/tmux-1000/fm-lab,1345989,0
+TMUX_PANE=%0
+untargeted 'tmux display-message -p #S' from this pane -> puente-v-30d9315b0c1d
+fm_backend_tmux_container_ensure -> 'puente-v-30d9315b0c1d'
+--- fm-spawn.sh tail (full log: r2-base-grouped-spawn.log)
+spawned lab30d9315b-ship harness=claude kind=ship mode=local-only yolo=on window=puente-v-30d9315b0c1d:fm-lab30d9315b-ship worktree=/tmp/fm-lab.J4iLWH/treehouse/.treehouse/notes-83633b/1/notes
+fm-spawn exit=0
+--- recorded endpoint in state/lab30d9315b-ship.meta
+window=puente-v-30d9315b0c1d:fm-lab30d9315b-ship
+--- where the task window actually lives
+cc-firstmate-1345851:fm-lab30d9315b-ship (@2)
+puente-v-30d9315b0c1d:fm-lab30d9315b-ship (@2)
+--- muse credential preflight (full log: r2-base-grouped-muse.log)
+pane's own session ($TMUX id $0) -> cc-firstmate-1345851: META_API_KEY=<set>
+most-recent group member -> puente-v-30d9315b0c1d: unknown variable: META_API_KEY
++ fm-spawn.sh lab30d9315b-muse ... --harness muse   (no auth.json; META_API_KEY only in the primary's own tmux session env)
+error: muse has no worker-reachable credential; META_API_KEY cannot be proven present in the tmux worker environment and '/tmp/fm-lab.J4iLWH/xdg/muse/auth.json' is absent or empty. Store the fleet credential with 'muse login' or 'muse auth set --api-key-stdin'.
+fm-spawn exit=1
+muse task window: <none>
+--- endpoint resolution while the viewer is attached
++ grep ^window= state/lab30d9315b-ship.meta
+window=puente-v-30d9315b0c1d:fm-lab30d9315b-ship
++ bin/fm-peek.sh lab30d9315b-ship 8
+fm-peek exit=0
++ bin/fm-crew-state.sh lab30d9315b-ship
+state: working · source: pane · harness busy (claude-hook)
+fm-crew-state exit=0
+--- viewer closed (kill-session -t puente-v-30d9315b0c1d); sessions now: cc-firstmate-1345851 
+primary pane %0 still lives at: cc-firstmate-1345851:main
+--- endpoint resolution after the viewer closed (full: r2-base-grouped-endpoint-after-viewer-closed.txt)
++ grep ^window= state/lab30d9315b-ship.meta
+window=puente-v-30d9315b0c1d:fm-lab30d9315b-ship
++ bin/fm-peek.sh lab30d9315b-ship 8
+fm-peek exit=1
++ bin/fm-crew-state.sh lab30d9315b-ship
+state: unknown · source: none · backend target gone: puente-v-30d9315b0c1d:fm-lab30d9315b-ship
+fm-crew-state exit=0
+== lab r2-base-grouped finished
+--- teardown: claude trust entries removed for this lab: 2
+--- ~/.treehouse unchanged: yes

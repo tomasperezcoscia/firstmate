@@ -1,0 +1,35 @@
++ /home/tperez/.no-mistakes/worktrees/9cf2fb7d564f/01M5K4X85ZEW3T188VF4DA28W2/bin/fm-brief.sh lab0249266f-ship notes --mode local-only
+scaffolded: /tmp/fm-lab.t7UwlT/home/data/lab0249266f-ship/brief.md (ship, mode=local-only; replace {TASK} and {FIRSTMATE_SPEC})
++ fill_brief /tmp/fm-lab.t7UwlT/home/data/lab0249266f-ship/brief.md 'Live-validation lab task for a tmux container fix. Do not modify any files. Reply with the single word READY and end your turn.' 'Do not run any commands and do not modify any files. Reply READY and end your turn. Nothing else is in scope.'
++ TASK_TEXT='Live-validation lab task for a tmux container fix. Do not modify any files. Reply with the single word READY and end your turn.'
++ SPEC_TEXT='Do not run any commands and do not modify any files. Reply READY and end your turn. Nothing else is in scope.'
++ python3 -I - /tmp/fm-lab.t7UwlT/home/data/lab0249266f-ship/brief.md
++ /home/tperez/.no-mistakes/worktrees/9cf2fb7d564f/01M5K4X85ZEW3T188VF4DA28W2/bin/fm-tasks-axi.sh add lab0249266f-ship 'lab grouped-session ship' --kind ship --repo notes
+ok: added lab0249266f-ship (ship, repo notes) -> Queued
+task:
+  id: lab0249266f-ship
+  title: lab grouped-session ship
+  state: queued
+  blocked: no
+  blocked_by: none
+  held: no
+  hold_reason: "-"
+  hold_kind: "-"
+  hold_until: "-"
+  kind: ship
+  repo: notes
+  priority: "-"
+  created: 2026-10-22
+  closed: "-"
+  deps: none
+  links: none
+  body: ""
+help[2]:
+  - Run `tasks-axi start lab0249266f-ship` to move it to in flight
+  - Run `tasks-axi block lab0249266f-ship --by <other>` to record a dependency
++ /home/tperez/.no-mistakes/worktrees/9cf2fb7d564f/01M5K4X85ZEW3T188VF4DA28W2/bin/fm-spawn.sh lab0249266f-ship /tmp/fm-lab.t7UwlT/home/projects/notes --mode local-only --yolo on --harness claude --model sonnet --effort low
+fm-gate-refuse: gate agent lifecycle permitted only against lab home /tmp/fm-lab.t7UwlT/home
+spawned lab0249266f-ship harness=claude kind=ship mode=local-only yolo=on window=cc-firstmate-1335724:fm-lab0249266f-ship worktree=/tmp/fm-lab.t7UwlT/treehouse/.treehouse/notes-ecc663/1/notes
++ echo 'fm-spawn exit=0'
+fm-spawn exit=0
++ set +x

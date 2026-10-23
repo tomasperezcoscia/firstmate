@@ -1,0 +1,64 @@
++ grep ^window= state/lab38a20753-ship.meta
+window=cc-firstmate-1345852:fm-lab38a20753-ship
++ bin/fm-peek.sh lab38a20753-ship 8
+●━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+●  WATCHER DOWN - SUPERVISION IS OFF
+●  1 task(s) in flight, but no watcher has a fresh beacon (last beat: never, grace 300s).
+●  Trust the emitted supervision protocol for this harness; do not use shell & for watcher repair.
+●  This is a supervision warning only; the guarded operation WILL still run.
+●  repair missing watcher supervision according to the session-start block for this harness; do not use shell &.
+●━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+ ▐▛███▛█   Claude Code v2.1.309
+▝▜██████▀  Sonnet 5.5 with low effort · Claude Max
+ ▝▝   ▝▝   /tmp/fm-lab.tW3kZR/treehouse/.treehouse/notes-775d96/1/notes
+
+
+❯ : Firstmate operational input waiting: read '/tmp/fm-lab.tW3kZR/home/state/operational-inbox/1792718929-b9f4b81e6ed8ae6f.msg' and handle its contents as Firstmate operational input.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+✶ Befuddling… (running SessionStart hooks… 7/8 · 0s)
+▄▀▀▀▀▀▄ ▄▀▀▀▀▀▄  relojeo                                                                                                                                                                            [-]
+▀  ▄▄ ▀ ▀  ▄▄ ▀  relojeando…
+▀▄▄▀▀▄▀ ▀▄▄▀▀▄▀
+                                                                                                                                                                                       ○ low · /effort
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+❯ 
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  ⏵⏵ auto mode on (shift+tab to cycle) · esc to interrupt · ← for agents
+fm-peek exit=0
++ bin/fm-crew-state.sh lab38a20753-ship
+state: working · source: pane · harness busy (fm-spawn)
+fm-crew-state exit=0

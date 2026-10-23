@@ -1,0 +1,12 @@
+pane's own session ($TMUX id $0) -> cc-firstmate-1345851: META_API_KEY=<set>
+most-recent group member -> puente-v-30d9315b0c1d: unknown variable: META_API_KEY
++ fm-spawn.sh lab30d9315b-muse ... --harness muse   (no auth.json; META_API_KEY only in the primary's own tmux session env)
+●━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+●  WATCHER DOWN - SUPERVISION IS OFF
+●  1 task(s) in flight, but no watcher has a fresh beacon (last beat: never, grace 300s).
+●  Trust the emitted supervision protocol for this harness; do not use shell & for watcher repair.
+●  This is a supervision warning only; the guarded operation WILL still run.
+●  repair missing watcher supervision according to the session-start block for this harness; do not use shell &.
+●━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+error: muse has no worker-reachable credential; META_API_KEY cannot be proven present in the tmux worker environment and '/tmp/fm-lab.J4iLWH/xdg/muse/auth.json' is absent or empty. Store the fleet credential with 'muse login' or 'muse auth set --api-key-stdin'.
+fm-spawn exit=1

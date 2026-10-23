@@ -1,0 +1,36 @@
+== lab r2-target-stale (stale): code=/home/tperez/.no-mistakes/worktrees/9cf2fb7d564f/01M5K4X85ZEW3T188VF4DA28W2 (534622a)
+lab root=/tmp/fm-lab.tW3kZR task=lab38a20753-ship primary session=cc-firstmate-1345852 viewer session=puente-v-38a207530c1d
+--- primary pane %2 created in session puente-v-38a207530c1d; sessions and clients:
+cc-firstmate-1345852 id=$0 group=cc-firstmate-1345852 attached=0
+puente-v-38a207530c1d id=$1 group=cc-firstmate-1345852 attached=1
+client /dev/pts/7 -> session puente-v-38a207530c1d
+--- precheck from the primary pane, viewer attached
+TMUX=/tmp/fml.nmFXAl/tmux-1000/fm-lab,1345991,1
+TMUX_PANE=%2
+untargeted 'tmux display-message -p #S' from this pane -> puente-v-38a207530c1d
+fm_backend_tmux_container_ensure -> 'puente-v-38a207530c1d'
+--- viewer closed (kill-session -t puente-v-38a207530c1d); sessions now: cc-firstmate-1345852 
+primary pane %2 still lives at: cc-firstmate-1345852:viewer-opened
+--- precheck from the primary pane after the viewer closed ($TMUX now names a killed session)
+TMUX=/tmp/fml.nmFXAl/tmux-1000/fm-lab,1345991,1
+TMUX_PANE=%2
+untargeted 'tmux display-message -p #S' from this pane -> cc-firstmate-1345852
+fm_backend_tmux_container_ensure -> 'cc-firstmate-1345852'
+--- fm-spawn.sh tail (full log: r2-target-stale-spawn.log)
+spawned lab38a20753-ship harness=claude kind=ship mode=local-only yolo=on window=cc-firstmate-1345852:fm-lab38a20753-ship worktree=/tmp/fm-lab.tW3kZR/treehouse/.treehouse/notes-775d96/1/notes
+fm-spawn exit=0
+--- recorded endpoint in state/lab38a20753-ship.meta
+window=cc-firstmate-1345852:fm-lab38a20753-ship
+--- where the task window actually lives
+cc-firstmate-1345852:fm-lab38a20753-ship (@3)
+--- endpoint resolution after the viewer closed (full: r2-target-stale-endpoint-after-viewer-closed.txt)
++ grep ^window= state/lab38a20753-ship.meta
+window=cc-firstmate-1345852:fm-lab38a20753-ship
++ bin/fm-peek.sh lab38a20753-ship 8
+fm-peek exit=0
++ bin/fm-crew-state.sh lab38a20753-ship
+state: working · source: pane · harness busy (fm-spawn)
+fm-crew-state exit=0
+== lab r2-target-stale finished
+--- teardown: claude trust entries removed for this lab: 2
+--- ~/.treehouse unchanged: yes
