@@ -1,0 +1,47 @@
+== BASELINE (base commit 427056c4) same sequence
+sha256:1a5d32e59990ae91a25b1e5900e3fec60eb3f79cb8c8e04b9ff83a3549a03108
+3629312
+generation=5 phase=active
+
+-- arm/watch children:
+3629982 3629312          \_ bash /tmp/fm-base.ixvKS3/bin/fm-watch-arm.sh --restart
+3638613 3629312          \_ bash /tmp/fm-base.ixvKS3/bin/fm-watch-arm.sh --restart
+3638667 3638613              \_ bash /tmp/fm-base.ixvKS3/bin/fm-watch.sh
+-- cycle exits:
+arm_pid=3629328	watcher_pid=3629389	exit_code=143	signal=TERM	reason=signal-exit
+arm_pid=3629982	watcher_pid=3630208	exit_code=0	signal=none	reason=unexpected-clean-exit
+arm_pid=3629986	watcher_pid=3630173	exit_code=0	signal=none	reason=actionable-check
+arm_pid=3629982	watcher_pid=3630173	exit_code=unknown	signal=unknown	reason=attached-cycle-ended
+arm_pid=3631003	watcher_pid=3631061	exit_code=143	signal=TERM	reason=signal-exit
+arm_pid=3629982	watcher_pid=3631061	exit_code=unknown	signal=unknown	reason=attached-cycle-ended
+arm_pid=3633907	watcher_pid=3634060	exit_code=143	signal=TERM	reason=signal-exit
+arm_pid=3629982	watcher_pid=3634060	exit_code=unknown	signal=unknown	reason=attached-cycle-ended
+arm_pid=3635025	watcher_pid=3635180	exit_code=0	signal=none	reason=actionable-signal
+arm_pid=3629982	watcher_pid=3635180	exit_code=unknown	signal=unknown	reason=attached-cycle-ended
+-- deliveries:
+check: rearm-resurface
+signal: /tmp/fm-lab.VMP2bj/state/labtask.status
+-- ext log:
+2026-11-13T19:35:05.429Z pid=3629312 restore attempt=0 predecessor=3629986 start=ok pid=3631003
+2026-11-13T19:35:06.463Z pid=3629312 confirm generation=3630173.1794598504.B6WTfk watcherPid=3631061 result=confirmed
+2026-11-13T19:35:31.958Z pid=3629312 restore attempt=0 predecessor=3629986 start=ok pid=3633907
+2026-11-13T19:35:33.210Z pid=3629312 confirm generation=3630173.1794598504.B6WTfk watcherPid=3634060 result=confirmed
+2026-11-13T19:35:39.960Z pid=3629312 restore attempt=0 predecessor=3629986 start=ok pid=3635025
+2026-11-13T19:35:41.208Z pid=3629312 confirm generation=3630173.1794598504.B6WTfk watcherPid=3635180 result=confirmed
+2026-11-13T19:36:12.595Z pid=3629312 restore attempt=0 predecessor=3635025 start=ok pid=3638613
+2026-11-13T19:36:13.754Z pid=3629312 confirm generation=3630173.1794598504.B6WTfk watcherPid=3638667 result=confirmed
+-- pane:
+  fm-primary-pi-watch.ts
+ Reloaded keybindings, extensions, skills, prompts, themes, and context files
+ Extension "<runtime>" error: No API key found for the selected model.
+ Use /login to log into a provider via OAuth or API key. See:
+   /home/wellexpert/.local/lib/node_modules/@earendil-works/pi-coding-agent/docs/providers.md
+   /home/wellexpert/.local/lib/node_modules/@earendil-works/pi-coding-agent/docs/models.md
+ Extension "<runtime>" error: No API key found for the selected model.
+ Use /login to log into a provider via OAuth or API key. See:
+   /home/wellexpert/.local/lib/node_modules/@earendil-works/pi-coding-agent/docs/providers.md
+   /home/wellexpert/.local/lib/node_modules/@earendil-works/pi-coding-agent/docs/models.md
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+/tmp/fm-base.ixvKS3
+0.0%/0 (auto)                                                                                                                                                                                    unknown

@@ -1,0 +1,6 @@
+== after /quit
+cat: /tmp/fm-lab.ALEkKK/state/.pi-watch-extension-loaded: No such file or directory
+
+-- leftover fm-watch processes from this worktree:
+none
+no server running on /tmp/fm-lab.ALEkKK/tmux/tmux-1000/fm-lab

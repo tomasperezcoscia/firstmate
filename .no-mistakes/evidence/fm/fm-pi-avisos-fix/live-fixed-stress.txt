@@ -1,0 +1,36 @@
+== FIXED stress: /new x3 + /reload + user input + status signal
+sha256:383ca8ee69e21c4b49144f6260c06a7e103b306aa3cbb32a708c0e2dd19ceba8
+3641785
+generation=5 phase=active
+
+-- arm/watch children:
+3646840 3641785          \_ bash /home/wellexpert/.no-mistakes/worktrees/5ef81aafef76/01M7B66WM1SG9310J27WFF09GT/bin/fm-watch-arm.sh --restart
+3646906 3646840              \_ bash /home/wellexpert/.no-mistakes/worktrees/5ef81aafef76/01M7B66WM1SG9310J27WFF09GT/bin/fm-watch.sh
+-- cycle exits:
+arm_pid=3641802	watcher_pid=3641875	exit_code=143	signal=TERM	reason=signal-exit
+arm_pid=3642477	watcher_pid=3642655	exit_code=0	signal=none	reason=actionable-check
+arm_pid=3643131	watcher_pid=3643196	exit_code=143	signal=TERM	reason=signal-exit
+arm_pid=3644146	watcher_pid=3644364	exit_code=0	signal=none	reason=actionable-signal
+-- deliveries:
+check: rearm-resurface
+signal: /tmp/fm-lab.4YU1Tt/state/stress.status
+-- ext log:
+2026-11-13T19:36:50.922Z pid=3641785 restore attempt=0 predecessor=3642477 start=ok pid=3643131
+2026-11-13T19:36:51.991Z pid=3641785 confirm generation=3641875.1794598609.Ek4H5H watcherPid=3643196 result=confirmed
+2026-11-13T19:36:53.481Z pid=3641785 restore attempt=0 predecessor=3642477 start=ok pid=3644146
+2026-11-13T19:36:54.765Z pid=3641785 confirm generation=3641875.1794598609.Ek4H5H watcherPid=3644364 result=confirmed
+2026-11-13T19:37:41.557Z pid=3641785 restore attempt=0 predecessor=3644146 start=ok pid=3646840
+2026-11-13T19:37:42.802Z pid=3641785 confirm generation=3641875.1794598609.Ek4H5H watcherPid=3646906 result=confirmed
+-- pane:
+  fm-primary-pi-watch.ts
+ Reloaded keybindings, extensions, skills, prompts, themes, and context files
+ Extension "<runtime>" error: No API key found for the selected model.
+ Use /login to log into a provider via OAuth or API key. See:
+ Error: No API key found for the selected model.
+ Use /login to log into a provider via OAuth or API key. See:
+ Extension "<runtime>" error: No API key found for the selected model.
+ Use /login to log into a provider via OAuth or API key. See:
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+~/.no-mistakes/worktrees/5ef81aafef76/01M7B66WM1SG9310J27WFF09GT (detached)
+0.0%/0 (auto)                                                                                                                                                                                    unknown

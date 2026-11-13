@@ -1,0 +1,12 @@
+2026-11-13T19:32:02.119Z pid=3615284 restore attempt=0 predecessor=3616720 start=ok pid=3617378
+2026-11-13T19:32:03.199Z pid=3615284 confirm generation=3615380.1794598320.YYEeqR watcherPid=3617443 result=confirmed
+2026-11-13T19:32:50.020Z pid=3615284 restore attempt=0 predecessor=3617378 start=ok pid=3620423
+2026-11-13T19:32:51.239Z pid=3615284 confirm generation=3615380.1794598320.YYEeqR watcherPid=3620488 result=confirmed
+2026-11-13T19:33:33.388Z pid=3615284 restore attempt=0 predecessor=3616720 start=ok pid=3623199
+2026-11-13T19:33:34.863Z pid=3615284 confirm generation=3615380.1794598320.YYEeqR watcherPid=3623361 result=confirmed
+2026-11-13T19:33:34.883Z pid=3615284 restore attempt=0 predecessor=3617378 start=ok pid=3623199
+2026-11-13T19:33:35.041Z pid=3615284 confirm generation=3615380.1794598320.YYEeqR watcherPid=3623361 result=confirmed
+2026-11-13T19:33:41.387Z pid=3615284 restore attempt=0 predecessor=3616720 start=ok pid=3624062
+2026-11-13T19:33:42.828Z pid=3615284 confirm generation=3615380.1794598320.YYEeqR watcherPid=3624210 result=confirmed
+2026-11-13T19:33:42.840Z pid=3615284 restore attempt=0 predecessor=3617378 start=ok pid=3624062
+2026-11-13T19:33:42.947Z pid=3615284 confirm generation=3615380.1794598320.YYEeqR watcherPid=3624210 result=confirmed

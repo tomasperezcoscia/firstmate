@@ -1,0 +1,27 @@
+== after chained /new /new
+-- marker:
+sha256:383ca8ee69e21c4b49144f6260c06a7e103b306aa3cbb32a708c0e2dd19ceba8
+3615284
+generation=3 phase=active
+
+-- arm/watch processes under pi (3615284):
+3615284 3615283  |   \_ pi
+3617378 3615284  |       \_ bash /home/wellexpert/.no-mistakes/worktrees/5ef81aafef76/01M7B66WM1SG9310J27WFF09GT/bin/fm-watch-arm.sh --restart
+3617443 3617378  |           \_ bash /home/wellexpert/.no-mistakes/worktrees/5ef81aafef76/01M7B66WM1SG9310J27WFF09GT/bin/fm-watch.sh
+-- sessions:
+-- extension log:
+2026-11-13T19:32:02.119Z pid=3615284 restore attempt=0 predecessor=3616720 start=ok pid=3617378
+2026-11-13T19:32:03.199Z pid=3615284 confirm generation=3615380.1794598320.YYEeqR watcherPid=3617443 result=confirmed
+-- pane:
+ Pi can explain its own features and look up its docs. Ask it how to use or extend Pi.
+[Extensions]
+  fm-primary-pi-watch.ts
+ ✓ New session started
+ Extension "<runtime>" error: No API key found for the selected model.
+ Use /login to log into a provider via OAuth or API key. See:
+   /home/wellexpert/.local/lib/node_modules/@earendil-works/pi-coding-agent/docs/providers.md
+   /home/wellexpert/.local/lib/node_modules/@earendil-works/pi-coding-agent/docs/models.md
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+~/.no-mistakes/worktrees/5ef81aafef76/01M7B66WM1SG9310J27WFF09GT (detached)
+0.0%/0 (auto)                                                                                                                                                                                    unknown

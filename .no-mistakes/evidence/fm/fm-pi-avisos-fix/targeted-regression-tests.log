@@ -1,0 +1,13 @@
+ok - Pi session transitions auto-arm through a generation owner across /new /resume /fork/reload, stale callbacks, and quit
+ok - Pi superseded replacement session never takes supervision from the newest session
+ok - Pi last applied replacement takes supervision on its first interactive input
+ok - Pi displaced owner hands its in-flight actionable to the visible session
+ok - Pi reloaded module copy keeps a single supervision owner per process
+ok - Pi session replacement auto-arms and carries its in-flight actionable close
+ok - Pi replacement persistence failure keeps its predecessor until a successor commits
+ok - Pi replacement receives actionable closes after retirement timeout
+ok - Pi suite leaves no orphaned process from its temporary root
+
+real	0m10.961s
+user	0m3.950s
+sys	0m2.899s

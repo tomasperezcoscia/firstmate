@@ -1,0 +1,40 @@
+== after two /reload
+sha256:383ca8ee69e21c4b49144f6260c06a7e103b306aa3cbb32a708c0e2dd19ceba8
+3615284
+generation=5 phase=active
+
+-- arm/watch children of pi:
+3624062 3615284  |       \_ bash /home/wellexpert/.no-mistakes/worktrees/5ef81aafef76/01M7B66WM1SG9310J27WFF09GT/bin/fm-watch-arm.sh --restart
+3624210 3624062  |           \_ bash /home/wellexpert/.no-mistakes/worktrees/5ef81aafef76/01M7B66WM1SG9310J27WFF09GT/bin/fm-watch.sh
+-- new cycle exits since reload:
+arm_pid=3620423	watcher_pid=3620488	exit_code=143	signal=TERM	reason=signal-exit	successor=none
+arm_pid=3623199	watcher_pid=3623361	exit_code=143	signal=TERM	reason=signal-exit	successor=none
+-- extension log:
+2026-11-13T19:32:02.119Z pid=3615284 restore attempt=0 predecessor=3616720 start=ok pid=3617378
+2026-11-13T19:32:03.199Z pid=3615284 confirm generation=3615380.1794598320.YYEeqR watcherPid=3617443 result=confirmed
+2026-11-13T19:32:50.020Z pid=3615284 restore attempt=0 predecessor=3617378 start=ok pid=3620423
+2026-11-13T19:32:51.239Z pid=3615284 confirm generation=3615380.1794598320.YYEeqR watcherPid=3620488 result=confirmed
+2026-11-13T19:33:33.388Z pid=3615284 restore attempt=0 predecessor=3616720 start=ok pid=3623199
+2026-11-13T19:33:34.863Z pid=3615284 confirm generation=3615380.1794598320.YYEeqR watcherPid=3623361 result=confirmed
+2026-11-13T19:33:34.883Z pid=3615284 restore attempt=0 predecessor=3617378 start=ok pid=3623199
+2026-11-13T19:33:35.041Z pid=3615284 confirm generation=3615380.1794598320.YYEeqR watcherPid=3623361 result=confirmed
+2026-11-13T19:33:41.387Z pid=3615284 restore attempt=0 predecessor=3616720 start=ok pid=3624062
+2026-11-13T19:33:42.828Z pid=3615284 confirm generation=3615380.1794598320.YYEeqR watcherPid=3624210 result=confirmed
+2026-11-13T19:33:42.840Z pid=3615284 restore attempt=0 predecessor=3617378 start=ok pid=3624062
+2026-11-13T19:33:42.947Z pid=3615284 confirm generation=3615380.1794598320.YYEeqR watcherPid=3624210 result=confirmed
+-- 40s later, cycle exits since reload:
+arm_pid=3620423	watcher_pid=3620488	exit_code=143	signal=TERM	reason=signal-exit	successor=none
+arm_pid=3623199	watcher_pid=3623361	exit_code=143	signal=TERM	reason=signal-exit	successor=none
+-- arm/watch children:
+3624062 3615284          \_ bash /home/wellexpert/.no-mistakes/worktrees/5ef81aafef76/01M7B66WM1SG9310J27WFF09GT/bin/fm-watch-arm.sh --restart
+3624210 3624062              \_ bash /home/wellexpert/.no-mistakes/worktrees/5ef81aafef76/01M7B66WM1SG9310J27WFF09GT/bin/fm-watch.sh
+0
+-- pane:
+ Extension "<runtime>" error: No API key found for the selected model.
+ Use /login to log into a provider via OAuth or API key. See:
+   /home/wellexpert/.local/lib/node_modules/@earendil-works/pi-coding-agent/docs/providers.md
+   /home/wellexpert/.local/lib/node_modules/@earendil-works/pi-coding-agent/docs/models.md
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+~/.no-mistakes/worktrees/5ef81aafef76/01M7B66WM1SG9310J27WFF09GT (detached)
+0.0%/0 (auto)                                                                                                                                                                                    unknown
